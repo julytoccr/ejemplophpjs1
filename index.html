@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <title>Php + Ajax Version 1</title>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+  <!-- La pagina inicialmente se carga casi vacia, los divs se cargan con las consultas ajax que estan 
+    -- dentro del JS que sigue.
+    -- La idea es poder mostrar como Php desde lado servidor, devuelve contenido que el JS en el Browser toma,
+    -- para procesarlo en caso que sea JSON o si es HTML directamente para modificar un DOM ELEMENT -->
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+
+  <!-- En este div coloco la lista de productos tomadas via ajax desde el webserver-->
+  <div id="lista_de_productos"></div>
+
+  <br/>
+  Ingrese Codigo de producto:
+  <input type="text" name="nro_producto" id="nro_producto" required>
+  <button id="boton_buscar">Buscar</button>
+
+  <!-- En este div coloco el nombre del producto buscado recibido via ajax desde el webserver-->
+  <div id="respuesta_de_busqueda"></div>
+
+</body>
+</html>
+
